@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>ESOKIA</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
     <header class="header">
         <div class="nav">
             <div class="logo"><img src="img/esokialogohq500wht.png" alt="logo-esokia"></div>
-            <div class="nav-bar">
+            <div class="nav-bar" id="myTopnav">
                 <a href="#">Esokia</a>
                 <a href="#">Services</a>
                 <a href="#">Références</a>
@@ -23,6 +24,9 @@
                 <a href="#">Actualités</a>
                 <a href="#">Devis</a>
                 <a href="#">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
         </div>
         
@@ -168,5 +172,17 @@
             <a href="#">contact@esokia.com</a>
         </div>
     </footer>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "nav-bar") {
+            x.className += "-responsive";
+          } else {
+            x.className = "nav-bar";
+          }
+        }
+        </script>
 </body>
+
 </html>
